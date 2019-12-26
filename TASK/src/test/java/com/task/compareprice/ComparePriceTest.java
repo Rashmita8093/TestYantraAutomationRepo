@@ -36,10 +36,13 @@ public class ComparePriceTest extends BaseClass {
 		/* Compare the price from amazon and flipkart and display it in console */
 		if(amazonPrice > flipkartPrice) {
 			Reporter.log("Flipkart has Lesser Price than Amazon", true);
+			Reporter.log("price of flipkart"+flipkartPrice );
 		}else if (amazonPrice < flipkartPrice) {
 			Reporter.log("Amazon has Lesser Price than flipkart", true);
+			Reporter.log("price of amazon"+amazonPrice );
 		}else {
 			Reporter.log("Amazon and Flipkart Both have same price", true);
+			Reporter.log("price of amazon"+amazonPrice+"price of flipkart"+flipkartPrice );
 		}
 		
 		

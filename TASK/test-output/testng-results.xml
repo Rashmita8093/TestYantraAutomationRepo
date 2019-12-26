@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Amazon has Lesser Price than flipkart]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63864" started-at="2019-12-26T11:49:18 IST" finished-at="2019-12-26T11:50:22 IST">
+  <suite name="Default suite" duration-ms="42159" started-at="2019-12-26T12:02:19 IST" finished-at="2019-12-26T12:03:02 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63864" started-at="2019-12-26T11:49:18 IST" finished-at="2019-12-26T11:50:22 IST">
-      <class name="com.task.tripadvisor.TripAdvisorTest">
-        <test-method status="PASS" signature="configBeforeSuite()[pri:0, instance:com.task.tripadvisor.TripAdvisorTest@184f6be2]" name="configBeforeSuite" is-config="true" duration-ms="32" started-at="2019-12-26T11:49:18 IST" finished-at="2019-12-26T11:49:18 IST">
+    <test name="Default test" duration-ms="42159" started-at="2019-12-26T12:02:19 IST" finished-at="2019-12-26T12:03:02 IST">
+      <class name="com.task.compareprice.ComparePriceTest">
+        <test-method status="PASS" signature="configBeforeSuite()[pri:0, instance:com.task.compareprice.ComparePriceTest@184f6be2]" name="configBeforeSuite" is-config="true" duration-ms="32" started-at="2019-12-26T12:02:19 IST" finished-at="2019-12-26T12:02:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBeforeSuite -->
-        <test-method status="PASS" signature="configBC()[pri:0, instance:com.task.tripadvisor.TripAdvisorTest@184f6be2]" name="configBC" is-config="true" duration-ms="3835" started-at="2019-12-26T11:49:18 IST" finished-at="2019-12-26T11:49:22 IST">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.task.compareprice.ComparePriceTest@184f6be2]" name="configBC" is-config="true" duration-ms="4448" started-at="2019-12-26T12:02:19 IST" finished-at="2019-12-26T12:02:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method status="PASS" signature="searchAndreviewTest()[pri:0, instance:com.task.tripadvisor.TripAdvisorTest@184f6be2]" name="searchAndreviewTest" duration-ms="58975" started-at="2019-12-26T11:49:22 IST" finished-at="2019-12-26T11:50:21 IST">
+        <test-method status="PASS" signature="comparePriceTest()[pri:0, instance:com.task.compareprice.ComparePriceTest@184f6be2]" name="comparePriceTest" duration-ms="36378" started-at="2019-12-26T12:02:24 IST" finished-at="2019-12-26T12:03:00 IST">
           <reporter-output>
+            <line>
+              <![CDATA[Amazon has Lesser Price than flipkart]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- searchAndreviewTest -->
-        <test-method status="PASS" signature="configAC()[pri:0, instance:com.task.tripadvisor.TripAdvisorTest@184f6be2]" name="configAC" is-config="true" duration-ms="1025" started-at="2019-12-26T11:50:21 IST" finished-at="2019-12-26T11:50:22 IST">
+        </test-method> <!-- comparePriceTest -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.task.compareprice.ComparePriceTest@184f6be2]" name="configAC" is-config="true" duration-ms="1270" started-at="2019-12-26T12:03:00 IST" finished-at="2019-12-26T12:03:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method status="PASS" signature="configAfterSuite()[pri:0, instance:com.task.tripadvisor.TripAdvisorTest@184f6be2]" name="configAfterSuite" is-config="true" duration-ms="31" started-at="2019-12-26T11:50:22 IST" finished-at="2019-12-26T11:50:22 IST">
+        <test-method status="PASS" signature="configAfterSuite()[pri:0, instance:com.task.compareprice.ComparePriceTest@184f6be2]" name="configAfterSuite" is-config="true" duration-ms="33" started-at="2019-12-26T12:03:04 IST" finished-at="2019-12-26T12:03:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAfterSuite -->
-      </class> <!-- com.task.tripadvisor.TripAdvisorTest -->
+      </class> <!-- com.task.compareprice.ComparePriceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
