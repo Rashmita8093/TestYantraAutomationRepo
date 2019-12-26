@@ -1,7 +1,9 @@
 package com.task.genericLibrary;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.poi.ss.usermodel.Cell;
@@ -24,11 +26,20 @@ public class FileLib implements IFilePaths,IAutoConstants{
 	 * @return String value
 	 * @throws Throwable
 	 */
-	public String getPropertyKeyValue(String Key) throws Throwable {
+	public String getPropertyKeyValue(String Key)  {
 
-		FileInputStream fis = new FileInputStream(PROP);
+		FileInputStream fis;
 		Properties pObj = new Properties();
-		pObj.load(fis);
+		try {
+			fis = new FileInputStream(PROP);
+			pObj.load(fis);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String value = pObj.getProperty(Key);
 		return value;
 

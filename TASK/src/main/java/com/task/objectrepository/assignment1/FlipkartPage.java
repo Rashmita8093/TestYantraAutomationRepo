@@ -32,7 +32,7 @@ public class FlipkartPage {
 	
 	FileLib flib = new FileLib();
 	
-	public FlipkartPage(WebDriver driver) throws Throwable {
+	public FlipkartPage(WebDriver driver)  {
 		// TODO Auto-generated constructor stub
 		driver.get(flib.getPropertyKeyValue("urlFlipkart"));
 		PageFactory.initElements(driver, this);

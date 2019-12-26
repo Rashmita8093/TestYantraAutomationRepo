@@ -30,7 +30,7 @@ public class BaseClass {
 	@BeforeSuite
 	public void configBeforeSuite() throws Throwable {
 		String dir = System.getProperty("user.dir");
-		System.setProperty("webdriver.gecko.driver", dir+"/src/main/resources/geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", dir+"/src/main/resources/chromedriver.exe");
 	}
 	@BeforeClass
 	public void configBC() throws Throwable {

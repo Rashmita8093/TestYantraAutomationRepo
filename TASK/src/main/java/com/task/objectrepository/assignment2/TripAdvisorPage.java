@@ -19,14 +19,12 @@ import com.task.genericLibrary.FileLib;
 public class TripAdvisorPage {
 	private WebDriver driver;
 	private CommonLibrary common;
-	Actions act = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
 	FileLib flib = new FileLib();
-	public TripAdvisorPage(WebDriver driver) throws Throwable {
+	public TripAdvisorPage(WebDriver driver){
 		
+		this.driver = driver;
 		driver.get(flib.getPropertyKeyValue("urlTripAdvisor"));
 		PageFactory.initElements(driver, this);
-		this.driver = driver;
 		common = new CommonLibrary(driver);
 	}
 	@FindBy(xpath= "//div[@title='Search']") 
@@ -48,19 +46,15 @@ public class TripAdvisorPage {
 	private WebElement ReviewTitle;
 	@FindBy(id = "ReviewText")
 	private WebElement ReviewText;
-	@FindBy(xpath = "///div[text()='Hotel Ratings']")
+	@FindBy(xpath = "//div[text()='Hotel Ratings']")
 	private WebElement ratingScroll;
 	@FindBy(id = "SUBMIT")
 	private WebElement submitBtn;
 	
-	
-	
-	
-
-	
-	public void searchInTripAdvisor(String sheetName, int rowNum, int celNum) throws Throwable {
+	public void searchInTripAdvisor(WebDriver driver,String sheetName, int rowNum, int celNum) throws Throwable {
 		try {
 			searchBox1.click();
+			WebDriverWait wait = new WebDriverWait(driver, 20);
 			wait.until(ExpectedConditions.elementToBeClickable(searchTxtBx));
 			searchTxtBx.sendKeys(flib.getExcelData(sheetName, rowNum, celNum));
 			searchBtn1.click();
@@ -70,9 +64,10 @@ public class TripAdvisorPage {
 		}
 	}
 	/* Search for  reviewTitleTripAdvisor inTripAdvisor */
-	public void reviewTitleTripAdvisor(String sheetName, int rowNum, int celNum) throws Throwable {
+	public void reviewTitleTripAdvisor(WebDriver driver,String sheetName, int rowNum, int celNum) throws Throwable {
 		textResult.click();
 		common.switchToChildWindow();
+		Actions act = new Actions(driver);
 		act.moveToElement(reviewscrl).perform();
 		reviewscrl.click();
 		common.switchWindow(driver, "Write a review");

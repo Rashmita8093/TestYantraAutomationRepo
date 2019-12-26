@@ -23,7 +23,7 @@ public class AmazonPage {
 	
 	FileLib flib = new FileLib();
 	
-	public AmazonPage(WebDriver driver) throws Throwable {
+	public AmazonPage(WebDriver driver)  {
 		// TODO Auto-generated constructor stub
 		driver.get(flib.getPropertyKeyValue("urlAmazon"));
 		PageFactory.initElements(driver, this);
