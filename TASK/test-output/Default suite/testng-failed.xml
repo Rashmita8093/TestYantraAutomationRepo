@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.task.tripadvisor.TripAdvisorTest">
+      <class name="com.task.compareprice.ComparePriceTest">
         <methods>
+          <include name="comparePriceTest"/>
           <include name="configBC"/>
-          <include name="searchAndreviewTest"/>
           <include name="configAC"/>
           <include name="configBeforeSuite"/>
           <include name="configAfterSuite"/>
         </methods>
-      </class> <!-- com.task.tripadvisor.TripAdvisorTest -->
+      </class> <!-- com.task.compareprice.ComparePriceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
